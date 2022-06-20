@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>A</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap" rel="stylesheet">
+      <style>
+         body {
+        font-family: 'Roboto', sans-serif;
+         margin: 0;
+         font-size: 24px;
+         }
+         .bg-grey {
+         background-color: #ccc;
+         }
+         .bg-blue {
+         background-color: #1391e7;
+         }
+         .flex {
+         display: flex;
+         flex-direction: column;
+         height: 100vh;
+         }
+         .section-one {
+         flex: 0.5;
+         }
+         .section-two {
+         flex: 0.5;
+         }
+         .row {
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+         }
+         .profile {
+         object-fit: contain;
+         width: 100vh;
+         }
+         .row > .section-two {
+         flex: 1 1 200px;
+         }
+         .row > .section-one {
+         flex: 1 1 400px;
+         }
+         .grid {
+         margin: 40px;
+         display: grid;
+         grid-template-columns: repeat(3, 1fr 2fr 1fr);
+         column-gap: 40px;
+         }
+         .grid > .container{
+
+         }
+         .project {
+         height: 300px;
+         border-radius: 32px;
+         }
+         .container {
+         position: relative;
+         width: 300px;
+         }
+         .image {
+         display: block;
+         width: 300px;
+         height: 300px;
+         border-radius: 32px;
+         }
+         .overlay {
+         border-radius: 32px;
+         position: absolute;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         height: 300px;
+         width: 300px;
+         opacity: 0;
+         transition: 0.5s ease;
+         background-color: white;
+         }
+         .container:hover .overlay {
+         opacity: 1;
+         }
+         .text {
+         color: #1391e7;
+         font-size: 20px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+         transform: translate(-50%, -50%);
+         text-align: center;
+         }
+         .description{
+             display: flex;
+             justify-content: space-between;
+             align-content: space-between;
+             flex-direction: column;
+            min-height: 300px;
+            
+         }
+         a{text-decoration: none; color: #1391e7;}
+         .row {
+            justify-content: space-around;
+         }
+         .title{background-color: #1391e7; color:white; margin: 0; text-align: center;}
+      </style>
+   </head>
+   <body class="bg-color">
+      <!-- <h2 class="text-color">Balbinah</h2> -->
+      <div class="flex">
+         <div class="section-one bg-grey">
+            <div class="row">
+               <div class="section-one" style="padding: 4px 32px;">
+                  <h1 class="title">Balbinah Joachim</h1>
+                  <p class="description">
+                     <span>
+                        Business Data Analyst with 5+ years experience managing and optimizing business performance using data-driven analytics.
+                     </span>
+                    <span>
+                     Currently transitioning to Data Science through machine learning and programming.
+                     l enjoy story telling and l translate data into stories using KNIME, MS Excel, Power BI, Python and SQL. 
+                    </span>
+                    <span>
+                        The best way in which change can be brought about in a business environment is through project management and l often times rely on  the Prince2 and Scrum frameworks when executing my projects. 
+                    </span>
+                  </p>
+                  <div class="row">
+                        <a href="https://github.com/BalbinahJoa">Github</a>
+                        <a href="https://www.linkedin.com/in/balbinah-joachim/">Linkedin</a>
+                        <a href="http://">Twitter</a>
+                  </div>
+                  
+               </div>
+                
+               <div class="section-two">
+                  <img src="./Balbinah.jpg" alt="Image" class="profile" />
+               </div>
+            </div>
+         </div>
+         <h1 class="title">PROJECTS</h1>
+         <div class="section-two bg-blue">
+            <div class="grid">
+               <div class="container">
+                  <img src="photo.png" alt="Avatar" class="image" />
+                  <div class="overlay">
+                     <div class="text">
+                        <a href="https://github.com/BalbinahJoa/MNIST-Classification-Project"> MNIST Project</a> 
+                    </div>
+                  </div>
+               </div>
+               
+            <div class="container"> 
+                <img src="knime.png" alt="Avatar" class="image" />
+              <div class="overlay">
+                <div class="text">
+                    <a href="https://github.com/BalbinahJoa/California-Housing-Regression-Project"> California Housing  </a> 
+                </div>
+                
+               </div>
+          </div>
+               <div class="container">
+                  <img src="python.png" alt="Avatar" class="image" />
+                  <div class="overlay">
+                     <div class="text">
+                         <a href="https://github.com/BalbinahJoa/Password-Generator-with-Python">Password generator with python</a>
+                        </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
